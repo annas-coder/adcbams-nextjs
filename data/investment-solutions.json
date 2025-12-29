@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/en/Images/self-directed-investments-thumbnail.png",
+    "title": "Self Directed Investments",
+    "description": "An open architecture gateway to global opportunities",
+    "link": "/en/investment-services/self-directed-investment"
+  },
+  {
+    "image": "/en/Images/advisory-solutions-thumbnail.png",
+    "title": "Advisory Solutions",
+    "description": "Whatever you need, whenever you need it",
+    "link": "/en/investment-services/advisory-solutions"
+  },
+  {
+    "image": "/en/Images/discretionary-portfolio-management-thumbnail.png",
+    "title": "Discretionary Portfolio Management",
+    "description": "Bespoke Investment Solutions",
+    "link": "/en/investment-services/discretionary-portfolio-management"
+  },
+  {
+    "image": "/en/Images/wealth-planning_tcm40-526487.png",
+    "title": "Wealth Planning",
+    "description": "Whatever you need, whenever you need it",
+    "link": "/en/investment-services/wealth-planning"
+  }
+]
+

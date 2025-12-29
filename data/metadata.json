@@ -1,0 +1,30 @@
+{
+  "home": {
+    "title": "ADCB Asset Management Limited - Tailored Investment Management",
+    "description": "Leading Abu Dhabi based asset manager with over USD2 Billion of assets under management. Offering self-directed investments, advisory solutions, and discretionary portfolio management.",
+    "keywords": [
+      "ADCB Asset Management",
+      "Investment Management",
+      "Asset Management UAE",
+      "Wealth Management",
+      "Portfolio Management",
+      "Investment Solutions",
+      "Financial Services Abu Dhabi",
+      "Discretionary Portfolio Management",
+      "Advisory Solutions",
+      "Self Directed Investments"
+    ],
+    "canonical": "/"
+  },
+  "insights": {
+    "title": "Insights - ADCB Asset Management Limited",
+    "description": "Investment decision support at every juncture. ADCB Asset Management understands the power of knowledge. Our strategists and advisors are committed to delivering the highest quality insights.",
+    "canonical": "/en/insights"
+  },
+  "investmentServices": {
+    "title": "Investment Services - ADCB Asset Management Limited",
+    "description": "Financial solutions that put you in control. Our core investment service proposition caters to clients seeking self-directed investments, advisory solutions and discretionary portfolio management.",
+    "canonical": "/en/investment-services"
+  }
+}
+

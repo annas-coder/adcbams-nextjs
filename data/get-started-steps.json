@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/en/Images/building-columns-100723.svg",
+    "title": "Connect with an Advisor",
+    "description": "Connect with an advisor so we can understand your needs",
+    "link": null
+  },
+  {
+    "icon": "/en/Images/account-100723.svg",
+    "title": "Open an Account",
+    "description": "Open an ADCB account to begin your investment journey",
+    "link": "/en/about/sof.aspx",
+    "linkText": "View fees & charges"
+  },
+  {
+    "icon": "/en/Images/checkmark-100723.svg",
+    "title": "Build Your Portfolio",
+    "description": "Choose your preferred solution to begin building your portfolio",
+    "link": null
+  }
+]
+
