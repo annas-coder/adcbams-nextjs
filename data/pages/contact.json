@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Contact Us - ADCB Asset Management Limited",
+    "description": "Contact ADCB Asset Management Limited. Thank you for your interest in ADCB Asset Management. Please contact us on our premium line or email us.",
+    "keywords": [
+      "Contact ADCB Asset Management",
+      "Contact Us",
+      "ADCB Asset Management Contact",
+      "Get in Touch"
+    ],
+    "canonical": "/en/contact",
+    "openGraph": {
+      "title": "Contact Us - ADCB Asset Management Limited",
+      "description": "Contact ADCB Asset Management Limited. Thank you for your interest in ADCB Asset Management.",
+      "url": "https://www.adcb.com/en/contact"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Contact",
+      "title": "Contact us"
+    },
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "Thank you for your interest in ADCB Asset Management. Please contact us on our premium line or email us and one of our professionals will be pleased to assist you."
+      },
+      {
+        "type": "contactInfo",
+        "address": {
+          "company": "ADCB Asset Management Limited",
+          "address": [
+            "Level 10, Al Sila Tower",
+            "ADGM Square",
+            "Al Maryah Island",
+            "PO Box 939",
+            "Abu Dhabi"
+          ],
+          "phone": {
+            "href": "tel:+97126981777",
+            "label": "Tel: +971 (0)2 698 1777"
+          }
+        },
+        "map": {
+          "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14522.193067139748!2d54.37978175323946!3d24.501104044482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e6654ed46c84f%3A0x2f5bcb81cc2ed32b!2sAbu+Dhabi+Global+Market+Authorities+Building!5e0!3m2!1sen!2sae!4v1537777870646",
+          "title": "ADCB Asset Management Location"
+        }
+      },
+      {
+        "type": "getInTouch",
+        "title": "Get in Touch",
+        "items": [
+          {
+            "icon": "/en/system/includes/images/phone-icon-100723.svg",
+            "title": "Contact Centre",
+            "content": "Call our 24-hour contact centre on",
+            "link": {
+              "href": "tel:600502322",
+              "label": "600 50 2322",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/message-icon-100723.svg",
+            "title": "Apply through SMS",
+            "content": "SMS",
+            "highlight": "PRIVATE",
+            "link": {
+              "href": "sms:2626&body=PRIVATE",
+              "label": "2626",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/marker-icon-100723.svg",
+            "title": "Visit Us",
+            "content": "We will be happy to welcome you at our exclusive Private Centers"
+          }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,84 @@
+{
+  "topMenu": [
+    {
+      "href": "https://adcb.com/en/personal",
+      "label": "Personal",
+      "className": "personal-color"
+    },
+    {
+      "href": "https://adcb.com/en/business",
+      "label": "Business",
+      "className": "personal-color"
+    },
+    {
+      "href": "https://adcb.com/en/private",
+      "label": "Private",
+      "className": "private-color"
+    },
+    {
+      "href": "https://adcb.com/en/about-us",
+      "label": "About Us",
+      "className": "personal-color"
+    }
+  ],
+  "mainNav": {
+    "brandLabel": "ADCB Asset Management Limited",
+    "overviewLink": {
+      "href": "/en/",
+      "label": "Overview"
+    },
+    "menuItems": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Investment Services",
+        "hasChildren": true,
+        "children": [
+          {
+            "href": "/en/investment-services/self-directed-investment/",
+            "label": "Self directed investments"
+          },
+          {
+            "href": "/en/investment-services/advisory-solutions/",
+            "label": "Advisory Solutions"
+          },
+          {
+            "href": "/en/investment-services/discretionary-portfolio-management/",
+            "label": "Discretionary Portfolio Management"
+          },
+          {
+            "href": "/en/investment-services/wealth-planning/",
+            "label": "Wealth Planning"
+          }
+        ]
+      },
+      {
+        "href": "/en/insights/",
+        "label": "Insights",
+        "hasChildren": true,
+        "children": [
+          {
+            "href": "/en/insights/investment-insights",
+            "label": "Investment Insights"
+          },
+          {
+            "href": "/en/insights/investment-strategy",
+            "label": "Investment Strategy"
+          }
+        ]
+      }
+    ]
+  },
+  "navFooter": [
+    {
+      "href": "/en/contact/",
+      "label": "Contact Us",
+      "target": "_self"
+    },
+    {
+      "href": "/en/about/",
+      "label": "About Us",
+      "target": "_blank"
+    }
+  ]
+}
+

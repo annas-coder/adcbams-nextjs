@@ -1,0 +1,187 @@
+{
+  "logo": {
+    "href": "/en/",
+    "id": "_logoFooter",
+    "srOnly": "adcb logo"
+  },
+  "socialMedia": [
+    {
+      "platform": "facebook",
+      "href": "https://facebook.com/ADCBOfficial",
+      "srOnly": "Facebook"
+    },
+    {
+      "platform": "instagram",
+      "href": "https://instagram.com/ADCB/",
+      "srOnly": "Instagram"
+    },
+    {
+      "platform": "twitter",
+      "href": "https://twitter.com/OfficialADCB",
+      "srOnly": "Twitter"
+    },
+    {
+      "platform": "linkedIn",
+      "href": "https://linkedIn.com/company/adcbofficial",
+      "srOnly": "Linkedin"
+    }
+  ],
+  "navigation": [
+    {
+      "title": "ABOUT",
+      "items": [
+        {
+          "href": "/en/about/",
+          "label": "About ADCB Asset Management",
+          "target": "_self",
+          "ariaLabel": "ADCB Private"
+        },
+        {
+          "href": "/en/about/terms.aspx",
+          "label": "Terms and conditions",
+          "target": "_self",
+          "ariaLabel": "Terms and conditions"
+        },
+        {
+          "href": "/en/about/sof.aspx",
+          "label": "Charges and fees",
+          "target": "_self",
+          "ariaLabel": "charges and fees"
+        }
+      ]
+    },
+    {
+      "title": "INVESTMENT SERVICES",
+      "items": [
+        {
+          "href": "/en/investment-services/self-directed-investment/",
+          "label": "Self directed investments",
+          "target": "_self",
+          "ariaLabel": "Self directed investments",
+          "style": {
+            "lineHeight": 1.4,
+            "padding": "0 0 12px"
+          }
+        },
+        {
+          "href": "/en/investment-services/advisory-solutions/",
+          "label": "Advisory Solutions",
+          "target": "_self",
+          "ariaLabel": "Advisory Solutions",
+          "style": {
+            "lineHeight": 1.4,
+            "padding": "0 0 12px"
+          }
+        },
+        {
+          "href": "/en/investment-services/discretionary-portfolio-management/",
+          "label": "Discretionary Portfolio Management",
+          "target": "_self",
+          "ariaLabel": "Discretionary Portfolio Management",
+          "style": {
+            "lineHeight": 1.4,
+            "padding": "0 0 12px"
+          }
+        }
+      ]
+    },
+    {
+      "title": "INSIGHTS",
+      "items": [
+        {
+          "href": "/en/insights/investment-strategy/",
+          "label": "Investment Strategy",
+          "target": "_self",
+          "ariaLabel": "Investment Strategy",
+          "style": {
+            "lineHeight": 1.4,
+            "padding": "0 0 12px"
+          }
+        },
+        {
+          "href": "/en/insights/investment-insights/",
+          "label": "Investment Insights",
+          "target": "_self",
+          "ariaLabel": "Investment Insights",
+          "style": {
+            "lineHeight": 1.4,
+            "padding": "0 0 12px"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Contact us",
+      "items": [
+        {
+          "type": "address",
+          "content": "ADCB Asset Management Limited, Level 10, Al Sila TowerADGM SquareAl Maryah Island, P. O. Box: 939, Abu Dhabi, United Arab Emirates."
+        },
+        {
+          "type": "phone",
+          "href": "tel:600502322",
+          "label": "600 50 2322"
+        },
+        {
+          "type": "email",
+          "href": "/cdn-cgi/l/email-protection#a6c7d5d5c3d2cbc7c8c7c1c3cbc3c8d2e6c7c2c5c488c5c9cb",
+          "label": "[email protected]"
+        }
+      ]
+    }
+  ],
+  "footerLinks": [
+    {
+      "href": "/en/about/terms.aspx",
+      "label": "Terms and Conditions",
+      "target": "_blank"
+    },
+    {
+      "href": "https://adcb.com/en/private/key-facts-statement/",
+      "label": "Key Facts Statement",
+      "target": "_self"
+    },
+    {
+      "href": "https://adcb.com/en/security-tips/avoid-phishing-scams",
+      "label": "Security tips",
+      "target": "_self"
+    },
+    {
+      "href": "/en/about/disclaimer.aspx",
+      "label": "Disclaimer",
+      "target": "_self"
+    },
+    {
+      "href": "/en/about/privacy-notice.aspx",
+      "label": "Privacy Policy",
+      "target": "_self"
+    },
+    {
+      "href": "/en/about/cookies-notice.aspx",
+      "label": "Cookies Policy",
+      "target": "_self"
+    },
+    {
+      "href": "https://adcb.com/en/multimedia/pdfs/2021/october/abc-policy.pdf",
+      "label": "ABC Policy Statement",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://adcb.com/en/multimedia/PDFS/2023/january/adcb-patriot-act-certification.pdf",
+      "label": "USA Patriot Certificate",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://adcb.com/en/suppliers/",
+      "label": "Suppliers",
+      "target": "_self"
+    }
+  ],
+  "copyright": {
+    "text": "Copyright © 2025 ADCB Asset Management. All rights reserved.",
+    "additional": "ADCB Asset Management Limited is a member of ADCB Group, licensed by Financial Services Regulatory Authority in Abu Dhabi Global Markets under financial services permission number 170036."
+  }
+}
+

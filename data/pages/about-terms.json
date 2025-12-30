@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Terms and Conditions - ADCB Asset Management Limited",
+    "description": "Terms and Conditions for ADCB Asset Management Limited. These terms apply to any person or entity that avail any product or service offered by ADCB Asset Management Limited.",
+    "keywords": [
+      "Terms and Conditions",
+      "ADCB Asset Management",
+      "Legal Terms",
+      "Terms of Service"
+    ],
+    "canonical": "/en/about/terms",
+    "openGraph": {
+      "title": "Terms and Conditions - ADCB Asset Management Limited",
+      "description": "Terms and Conditions for ADCB Asset Management Limited.",
+      "url": "https://www.adcb.com/en/about/terms"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "ABOUT",
+      "title": "Terms and conditions"
+    },
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "These terms apply to any person or entity that avail any product or service offered by ADCB Asset Management Limited."
+      },
+      {
+        "type": "paragraph",
+        "content": "Find all the relevant Terms and Conditions from the link mentioned below. To download these files, you would need to install Adobe Acrobat Reader on your computer."
+      },
+      {
+        "type": "downloads",
+        "items": [
+          {
+            "title": "Terms and Conditions for ADCB Asset Management Ltd",
+            "href": "/en/system/assets-mgnt/AML_T&Cs_Eng.pdf",
+            "label": "Download (PDF)",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          {
+            "title": "Schedule of Fees for ADCB Asset Management Ltd",
+            "subtitle": "(Effective from 1st of April 2022)",
+            "href": "/en/system/assets-mgnt/aaml-sof-english-v2-150322.pdf",
+            "label": "Download (PDF)",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        ]
+      }
+    ]
+  }
+}
+

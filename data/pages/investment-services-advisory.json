@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "title": "Advisory Solutions - ADCB Asset Management Limited",
+    "description": "An opportunistic approach to investment ideas and solutions, designed for clients who wish to retain a level of control over the management of their investment portfolios.",
+    "keywords": [
+      "Advisory Solutions",
+      "Bespoke Advised Solutions",
+      "Investment Advisory",
+      "Portfolio Management"
+    ],
+    "canonical": "/en/investment-services/advisory-solutions",
+    "openGraph": {
+      "title": "Advisory Solutions - ADCB Asset Management Limited",
+      "description": "An opportunistic approach to investment ideas and solutions, designed for clients who wish to retain a level of control over the management of their investment portfolios.",
+      "url": "https://www.adcb.com/en/investment-services/advisory-solutions"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Investment Services",
+      "title": "Whatever you need, whenever you need it"
+    },
+    "tabs": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/investment-services/self-directed-investment/",
+        "label": "Self Directed Investments"
+      },
+      {
+        "href": "/en/investment-services/advisory-solutions/",
+        "label": "Advisory Solutions",
+        "isActive": true
+      },
+      {
+        "href": "/en/investment-services/discretionary-portfolio-management/",
+        "label": "Discretionary Portfolio Management"
+      },
+      {
+        "href": "/en/investment-services/wealth-planning/",
+        "label": "Wealth Planning"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-advisory-solutions.jpg",
+      "alt": "Advisory Solutions"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Advisory Solutions",
+        "paragraphs": [
+          "An opportunistic approach to investment ideas and solutions, designed for clients who wish to retain a level of control over the management of their investment portfolios. Our specialist advisory team use complex modelling to construct and source innovative thematic ideas in global financial markets.",
+          "ADCB Asset Management's Advisory Solutions are designed to identify new investment opportunities and proactively help clients make investment decisions.",
+          "Drawing from an unconstrained investment universe, our advisory solutions offer clients direct access to the advisory desk which provides bespoke trade ideas across asset classes. Bridging the gap between fully discretionary and self directed services, the advisory proposition provides investors with greater control and oversight of their investment portfolio while benefiting from professional research and management. Reacting proactively to changes to market conditions, ADCB Asset Management's investment advisors will advise clients on emerging investment trends, themes and trade ideas. Tactical ideas will aim to take advantage of short term market momentum. Strategic ideas will aim to capitalise on long term views.",
+          "Comfortable in the knowledge that an advisor is close at hand, our clients take the final investment decision after understanding the investment merits and inherent risks."
+        ]
+      },
+      {
+        "type": "twoColumn",
+        "image": {
+          "src": "/en/Images/advisory-solutions-thumbnail.png",
+          "alt": "Bespoke Advised Solutions"
+        },
+        "title": "Bespoke Advised Solutions",
+        "items": [
+          "International Equity",
+          "Fixed Income",
+          "Local and International Mutual Funds",
+          "FX and money market",
+          "Structured Products",
+          "Alternatives (PE, Hedge, Real Estate, Derivatives)"
+        ]
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      }
+    ]
+  }
+}
+

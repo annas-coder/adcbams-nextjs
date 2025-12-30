@@ -1,11 +1,10 @@
-export default function TopMenu() {
-  const menuItems = [
-    { href: 'https://adcb.com/en/personal', label: 'Personal', className: 'personal-color' },
-    { href: 'https://adcb.com/en/business', label: 'Business', className: 'personal-color' },
-    { href: 'https://adcb.com/en/private', label: 'Private', className: 'private-color' },
-    { href: 'https://adcb.com/en/about-us', label: 'About Us', className: 'personal-color' },
-  ];
+import type { TopMenuItem } from '@/lib/types';
 
+interface TopMenuProps {
+  menuItems: TopMenuItem[];
+}
+
+export default function TopMenu({ menuItems }: TopMenuProps) {
   return (
     <>
       <div className="top-menu -desktop hidden-sm hidden-xs">

@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Insights - ADCB Asset Management Limited",
+    "description": "Investment decision support at every juncture. ADCB Asset Management understands the power of knowledge. Our strategists and advisors are committed to delivering the highest quality insights.",
+    "keywords": [
+      "Investment Insights",
+      "Investment Strategy",
+      "Market Analysis",
+      "Investment Research",
+      "Financial Insights"
+    ],
+    "canonical": "/en/insights",
+    "openGraph": {
+      "title": "Insights - ADCB Asset Management Limited",
+      "description": "Investment decision support at every juncture. ADCB Asset Management understands the power of knowledge.",
+      "url": "https://www.adcb.com/en/insights"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Insights",
+      "title": "Investment decision support at every juncture"
+    },
+    "tabs": [
+      {
+        "href": "/en/insights/",
+        "label": "Overview",
+        "isActive": true
+      },
+      {
+        "href": "/en/insights/investment-strategy/",
+        "label": "Investment Strategy"
+      },
+      {
+        "href": "/en/insights/investment-insights/",
+        "label": "Investment Insights"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/AssetManagmentHome.jpg",
+      "alt": "Investment Insights"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Investment decision support at every juncture",
+        "paragraphs": [
+          "ADCB Asset Management understands the power of knowledge. Our strategists and advisors are committed to delivering the highest quality insights into key global investment trends and themes across asset classes, sectors, countries and regions, as well as topical, relevant and tradable investment ideas.",
+          "Any investment, regardless of the level of diligence and research, has an element of investment risk. Always consult with your Investment Advisor or Relationship Manager to ensure suitability before entering into an investment transaction."
+        ]
+      }
+    ]
+  }
+}
+

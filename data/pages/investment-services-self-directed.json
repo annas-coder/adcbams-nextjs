@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "Self Directed Investments - ADCB Asset Management Limited",
+    "description": "In addition to ADCB Asset Management's in-house managed funds, our open architecture platform provides access to global mutual funds, international equities and ETF's, bonds, private equity, hedge funds and structured products.",
+    "keywords": [
+      "Self Directed Investments",
+      "ADCB Managed Funds",
+      "International Equity Trading",
+      "Fixed Income Trading",
+      "Investment Platform"
+    ],
+    "canonical": "/en/investment-services/self-directed-investment",
+    "openGraph": {
+      "title": "Self Directed Investments - ADCB Asset Management Limited",
+      "description": "Our open architecture platform provides access to global mutual funds, international equities and ETF's, bonds, private equity, hedge funds and structured products.",
+      "url": "https://www.adcb.com/en/investment-services/self-directed-investment"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Investment Services",
+      "title": "Whatever you need, whenever you need it"
+    },
+    "tabs": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/investment-services/self-directed-investment/",
+        "label": "Self Directed Investments",
+        "isActive": true
+      },
+      {
+        "href": "/en/investment-services/advisory-solutions/",
+        "label": "Advisory Solutions"
+      },
+      {
+        "href": "/en/investment-services/discretionary-portfolio-management/",
+        "label": "Discretionary Portfolio Management"
+      },
+      {
+        "href": "/en/investment-services/wealth-planning/",
+        "label": "Wealth Planning"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/self-directed-investments.png",
+      "alt": "Self Directed Investments"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Self Directed Investments",
+        "paragraphs": [
+          "In addition to ADCB Asset Management's in-house managed funds, our open architecture platform provides access to global mutual funds, international equities and ETF's, bonds, private equity, hedge funds and structured products.",
+          "Our market execution partners span most developed and emerging markets, covering equities, bonds, preferreds, perpetuals, ETF's, REITS, warrants, futures, options, as well as the ability to participate in IPOs. Custody is arranged through a global network of custody partners."
+        ]
+      },
+      {
+        "type": "twoColumn",
+        "image": {
+          "src": "/en/Images/self-directed-investments-thumbnail.png",
+          "alt": "Self Directed Investment"
+        },
+        "title": "Self Directed Investment",
+        "items": [
+          "ADCB Managed Funds",
+          "International Equity Trading",
+          "Fixed Income Trading",
+          "3rd Party Funds and Alternatives (PE, Hedge, Real Estate, Derivatives)",
+          "Structured Products"
+        ]
+      },
+      {
+        "type": "featuredProducts",
+        "title": "Featured products",
+        "description": "Refer to this page or ask your Relationship Manager about new products, IPO's and issues currently open for subscription.",
+        "disclaimer": "Any investment, regardless of the level of diligence and research, has an element of investment risk. Always consult with your Investment Advisor or Relationship Manager to ensure suitability before entering into an investment transaction.",
+        "products": [
+          {
+            "image": "/en/Images/adcb-managed-funds-thumbnail.png",
+            "alt": "ADCB Managed Funds",
+            "category": "Self Directed Investments",
+            "title": "ADCB Managed Funds"
+          },
+          {
+            "image": "/en/Images/3rd-party-mutual-funds-new-thumbnail.png",
+            "alt": "3rd Party Mutual Funds",
+            "category": "Self Directed Investments",
+            "title": "3rd Party Mutual Funds"
+          }
+        ]
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      }
+    ]
+  }
+}
+

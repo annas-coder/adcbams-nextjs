@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "title": "About Us - ADCB Asset Management Limited",
+    "description": "ADCB Asset Management Limited is a wholly owned subsidiary of Abu Dhabi Commercial Bank PJSC, authorised and regulated by the Financial Services Regulatory Authority.",
+    "keywords": [
+      "ADCB Asset Management",
+      "About ADCB",
+      "Financial Services Regulatory Authority",
+      "FSRA",
+      "Abu Dhabi Global Market",
+      "ADGM"
+    ],
+    "canonical": "/en/about",
+    "openGraph": {
+      "title": "About Us - ADCB Asset Management Limited",
+      "description": "ADCB Asset Management Limited is a wholly owned subsidiary of Abu Dhabi Commercial Bank PJSC, authorised and regulated by the Financial Services Regulatory Authority.",
+      "url": "https://www.adcb.com/en/about"
+    },
+    "twitter": {
+      "card": "summary",
+      "title": "About Us - ADCB Asset Management Limited",
+      "description": "ADCB Asset Management Limited is a wholly owned subsidiary of Abu Dhabi Commercial Bank PJSC."
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "About",
+      "title": "ADCB Asset Management Limited"
+    },
+    "subtitle": "Authorised and regulated by the Financial Services Regulatory Authority",
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "Established on 11 April 2018, ADCB Asset Management Limited is a wholly owned subsidiary of Abu Dhabi Commercial Bank PJSC. Built from a proud, award winning history as a division of its parent bank, ADCB Asset Management became a stand alone subsidiary in order to expand its range of products and services, and to better serve its customers."
+      },
+      {
+        "type": "paragraph",
+        "content": "ADCB Asset Management Limited is registered in the Abu Dhabi Global Market (\"ADGM\") (Registered Number 000001263), and is authorised and regulated by the Financial Services Regulatory Authority (\"FSRA\") (FSP Number 170036). The company holds a category 3C license with a retail endorsement and is authorised to conduct the Regulated Activities of:"
+      },
+      {
+        "type": "list",
+        "columns": 2,
+        "items": [
+          "Managing Assets",
+          "Advising of Investments or Credit",
+          "Arranging Deals in Investments",
+          "Arranging Custody",
+          "Arranging Credit"
+        ]
+      }
+    ]
+  }
+}
+

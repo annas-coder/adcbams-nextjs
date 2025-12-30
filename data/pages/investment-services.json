@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "Investment Services - ADCB Asset Management Limited",
+    "description": "Financial solutions that put you in control. Our core investment service proposition caters to clients seeking self-directed investments, advisory solutions and discretionary portfolio management.",
+    "keywords": [
+      "Investment Services",
+      "Self Directed Investments",
+      "Advisory Solutions",
+      "Discretionary Portfolio Management",
+      "Wealth Planning",
+      "Financial Solutions"
+    ],
+    "canonical": "/en/investment-services",
+    "openGraph": {
+      "title": "Investment Services - ADCB Asset Management Limited",
+      "description": "Financial solutions that put you in control.",
+      "url": "https://www.adcb.com/en/investment-services"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Investment Services",
+      "title": "Financial solutions that put you in control"
+    },
+    "tabs": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Overview",
+        "isActive": true
+      },
+      {
+        "href": "/en/investment-services/self-directed-investment/",
+        "label": "Self Directed Investments"
+      },
+      {
+        "href": "/en/investment-services/advisory-solutions/",
+        "label": "Advisory Solutions"
+      },
+      {
+        "href": "/en/investment-services/discretionary-portfolio-management/",
+        "label": "Discretionary Portfolio Management"
+      },
+      {
+        "href": "/en/investment-services/wealth-planning/",
+        "label": "Wealth Planning"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-investment-services.jpg",
+      "alt": "Investment Services"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Investment Services",
+        "content": "Our core investment service proposition caters to clients seeking self-directed investments, advisory solutions and discretionary portfolio management."
+      },
+      {
+        "type": "comparisonGrid",
+        "items": [
+          {
+            "title": "Self Directed",
+            "ideaGeneration": "Client",
+            "tradeDecision": "Client",
+            "services": [
+              "ADCB Managed Funds",
+              "International Equity Trading",
+              "Fixed Income Trading",
+              "3rd Party Funds and Alternatives (PE, Hedge, Real Estate, Derivatives)",
+              "Structured Products"
+            ],
+            "link": {
+              "href": "/en/investment-services/self-directed-investment/",
+              "label": "DISCOVER MORE"
+            }
+          },
+          {
+            "title": "Advisory",
+            "ideaGeneration": "ADCB AM",
+            "tradeDecision": "Client",
+            "services": [
+              "International Equity",
+              "Fixed Income",
+              "Local and International Mutual Funds",
+              "FX and money market",
+              "Structured Products",
+              "Alternatives (PE, Hedge, Real Estate, Derivatives)"
+            ],
+            "link": {
+              "href": "/en/investment-services/advisory-solutions/",
+              "label": "DISCOVER MORE"
+            }
+          },
+          {
+            "title": "Discretionary",
+            "ideaGeneration": "ADCB AM",
+            "tradeDecision": "ADCB AM",
+            "services": [
+              "Regional Direct Equity and Fixed Income Mandates",
+              "Global Balanced Multi- Manager Mandates"
+            ],
+            "link": {
+              "href": "/en/investment-services/discretionary-portfolio-management/",
+              "label": "DISCOVER MORE"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+

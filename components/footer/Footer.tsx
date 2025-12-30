@@ -1,13 +1,19 @@
 import Link from 'next/link';
+import type { FooterData } from '@/lib/types';
+import SocialMediaIcon from './SocialMediaIcon';
 
-export default function Footer() {
+interface FooterProps {
+  footerData: FooterData;
+}
+
+export default function Footer({ footerData }: FooterProps) {
   return (
     <footer className="site-footer" style={{ borderTop: '1px solid rgba(255,255,255,.3)' }}>
       <div className="c-footer container">
         <div className="c-footer-brand">
           <div className="c-footer-brand__logo">
-            <Link href="/en/" id="_logoFooter" className="o-site-logo" data-delay="5" data-anim="false" data-timing=".5" data-easing="ease-out">
-              <span className="sr-only">adcb logo</span>
+            <Link href={footerData.logo.href} id={footerData.logo.id} className="o-site-logo" data-delay="5" data-anim="false" data-timing=".5" data-easing="ease-out">
+              <span className="sr-only">{footerData.logo.srOnly}</span>
               <span className="o-site-logo-general__text">
                <svg width="176" height="92" viewBox="0 0 176 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0_251_2694)">
@@ -90,182 +96,102 @@ export default function Footer() {
           </div>
 
           <div className="c-footer-brand__social">
-            <div className="c-footer-brand__social__icon">
-              <a data-gtm="facebook" href="https://facebook.com/ADCBOfficial" target="_blank" rel="noopener noreferrer">
-                <span className="sr-only">Facebook</span>
-                <svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1">
-                  <g className="social">
-                    <path d="M9.36525077,0.00374520146 L7.03105396,0 C4.4086639,0 2.71396024,1.73870978 2.71396024,4.42982429 L2.71396024,6.4722699 L0.367029743,6.4722699 C0.164227084,6.4722699 0,6.63668425 0,6.83948691 L0,9.79875784 C0,10.0015605 0.164414344,10.1657876 0.367029743,10.1657876 L2.71396024,10.1657876 L2.71396024,17.6329703 C2.71396024,17.8357729 2.87818732,18 3.08098998,18 L6.1430667,18 C6.34586935,18 6.51009644,17.8355857 6.51009644,17.6329703 L6.51009644,10.1657876 L9.25420555,10.1657876 C9.45700821,10.1657876 9.62123529,10.0015605 9.62123529,9.79875784 L9.62235885,6.83948691 C9.62235885,6.74211167 9.58359602,6.64885615 9.51487157,6.57994445 C9.44614712,6.51103274 9.35251709,6.4722699 9.25514185,6.4722699 L6.51009644,6.4722699 L6.51009644,4.74086327 C6.51009644,3.9086795 6.70840486,3.48622078 7.79245342,3.48622078 L9.36487625,3.485659 C9.56749165,3.485659 9.73171874,3.32124466 9.73171874,3.11862926 L9.73171874,0.370774945 C9.73171874,0.168346806 9.56767891,0.00411972161 9.36525077,0.00374520146 Z" id="facebook"></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-            <div className="c-footer-brand__social__icon">
-              <a data-gtm="instagram" href="https://instagram.com/ADCB/" target="_blank" rel="noopener noreferrer">
-                <span className="sr-only">Instagram</span>
-                <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
-                  <g className="social">
-                    <path d="M10 2c2.606 0 2.914.01 3.943.057.952.043 1.468.202 1.812.336.456.177.78.388 1.122.73.342.341.553.666.73 1.122.134.344.293.86.336 1.812C17.99 7.086 18 7.394 18 10s-.01 2.914-.057 3.943c-.043.952-.202 1.468-.336 1.812-.177.456-.388.78-.73 1.122a3.023 3.023 0 0 1-1.122.73c-.344.134-.86.293-1.812.336C12.914 17.99 12.606 18 10 18s-2.914-.01-3.943-.057c-.952-.043-1.468-.202-1.812-.336a3.023 3.023 0 0 1-1.122-.73 3.023 3.023 0 0 1-.73-1.122c-.134-.344-.293-.86-.336-1.812C2.01 12.914 2 12.606 2 10s.01-2.914.057-3.943c.043-.952.202-1.468.336-1.812.177-.456.388-.78.73-1.122a3.024 3.024 0 0 1 1.122-.73c.344-.134.86-.293 1.812-.336C7.086 2.01 7.394 2 10 2zm0-2C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.902 4.902 0 0 0-1.772 1.153A4.902 4.902 0 0 0 .525 3.45C.278 4.086.109 4.813.06 5.877.011 6.944 0 7.284 0 10s.011 3.056.06 4.123c.049 1.064.218 1.791.465 2.427a4.902 4.902 0 0 0 1.153 1.772 4.902 4.902 0 0 0 1.772 1.153c.636.247 1.363.416 2.427.465 1.067.049 1.407.06 4.123.06s3.056-.011 4.123-.06c1.064-.049 1.791-.218 2.427-.465a4.902 4.902 0 0 0 1.772-1.153 4.902 4.902 0 0 0 1.153-1.772c.247-.636.416-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.049-1.064-.218-1.791-.465-2.427a4.902 4.902 0 0 0-1.153-1.772A4.902 4.902 0 0 0 16.55.525C15.914.278 15.187.109 14.123.06 13.056.012 12.716 0 10 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" id="instagram"></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-            <div className="c-footer-brand__social__icon">
-              <a data-gtm="twitter" href="https://twitter.com/OfficialADCB" target="_blank" rel="noopener noreferrer">
-                <span className="sr-only">Twitter</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17.374" viewBox="0 0 17 17.374">
-                  <g className="social">
-                    <path d="M10.1173092,7.35652333 L16.4459417,0 L14.9462583,0 L9.4511075,6.38756583 L5.06214667,0 L0,0 L6.63697,9.65913083 L0,17.373575 L1.49976833,17.373575 L7.30278917,10.6280883 L11.9378533,17.373575 L17,17.373575 L10.1169408,7.35652333 L10.1173092,7.35652333 Z M8.06317083,9.74423 L7.3907075,8.78239833 L2.04015583,1.129004 L4.3437125,1.129004 L8.66167,7.3055375 L9.33413333,8.26736917 L14.9469667,16.2959167 L12.64341,16.2959167 L8.06317083,9.74459833 L8.06317083,9.74423 Z" id="twitter"></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-            <div className="c-footer-brand__social__icon">
-              <a data-gtm="linkedIn" href="https://linkedIn.com/company/adcbofficial" target="_blank" rel="noopener noreferrer">
-                <span className="sr-only">Linkedin</span>
-                <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1">
-                  <g className="social">
-                    <path d="M17.963123,10.5237355 L17.963123,17.1648167 L14.1130441,17.1648167 L14.1130441,10.9685151 C14.1130441,9.4119536 13.5561717,8.34966125 12.1625708,8.34966125 C11.0987332,8.34966125 10.4656427,9.06556845 10.187123,9.75808817 C10.0855545,10.0056613 10.0594107,10.3502506 10.0594107,10.6968028 L10.0594107,17.1648167 L6.20803712,17.1648167 C6.20803712,17.1648167 6.25990719,6.67031555 6.20803712,5.58300696 L10.0590348,5.58300696 L10.0590348,7.22468213 C10.0512251,7.23696056 10.0410766,7.25019954 10.0337262,7.26210209 L10.0590348,7.26210209 L10.0590348,7.22468213 C10.5706775,6.43664965 11.4844176,5.31091879 13.529652,5.31091879 C16.0635592,5.31087703 17.963123,6.96625058 17.963123,10.5237355 Z M2.17933643,0 C0.861786543,0 0,0.864208817 0,2.00067285 C0,3.11237123 0.836853828,4.00280742 2.1282181,4.00280742 L2.15394432,4.00280742 C3.4970116,4.00280742 4.33227842,3.11253828 4.33227842,2.00067285 C4.30696984,0.864208817 3.4970116,0 2.17933643,0 Z M0.228737819,17.1648167 L4.07864965,17.1648167 L4.07864965,5.58300696 L0.228737819,5.58300696 L0.228737819,17.1648167 Z" id="LinkedIn"></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
+            {footerData.socialMedia.map((social, index) => (
+              <SocialMediaIcon key={index} social={social} />
+            ))}
           </div>
         </div>
         <div className="c-footer__nav">
           <ul className="nav-lvl01">
-            <li className="nav-lvl01__item o-comp-collapse">
-              <div className="nav-lvl01__link o-comp-collapse__btn">ABOUT</div>
-              <ul className="nav-lvl02 o-comp-collapse__content">
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/about/" target="_self" aria-label="ADCB Private">
-                    About ADCB Asset Management
-                  </Link>
-                </li>
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/about/terms.aspx" target="_self" aria-label="Terms and conditions">
-                    Terms and conditions
-                  </Link>
-                </li>
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/about/sof.aspx" target="_self" aria-label="charges and fees">
-                    Charges and fees
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-lvl01__item o-comp-collapse">
-              <div className="nav-lvl01__link o-comp-collapse__btn">INVESTMENT SERVICES</div>
-              <ul className="nav-lvl02 o-comp-collapse__content">
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/investment-services/self-directed-investment/" target="_self" aria-label="Self directed investments" style={{ lineHeight: 1.4, padding: '0 0 12px' }}>
-                    Self directed investments
-                  </Link>
-                </li>
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/investment-services/advisory-solutions/" target="_self" aria-label="Advisory Solutions" style={{ lineHeight: 1.4, padding: '0 0 12px' }}>
-                    Advisory Solutions
-                  </Link>
-                </li>
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/investment-services/discretionary-portfolio-management/" target="_self" aria-label="Discretionary Portfolio Management" style={{ lineHeight: 1.4, padding: '0 0 12px' }}>
-                    Discretionary Portfolio Management
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-lvl01__item o-comp-collapse">
-              <div className="nav-lvl01__link o-comp-collapse__btn">INSIGHTS</div>
-              <ul className="nav-lvl02 o-comp-collapse__content">
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/insights/investment-strategy/" target="_self" aria-label="Investment Strategy" style={{ lineHeight: 1.4, padding: '0 0 12px' }}>
-                    Investment Strategy
-                  </Link>
-                </li>
-                <li className="nav-lvl02__item">
-                  <Link className="nav-lvl02__link" href="/en/insights/investment-insights/" target="_self" aria-label="Investment Insights" style={{ lineHeight: 1.4, padding: '0 0 12px' }}>
-                    Investment Insights
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-lvl01__item">
-              <div className="nav-lvl01__link o-comp-collapse__btn">Contact us</div>
-              <ul className="nav-lvl02 o-comp-collapse__content">
-                <li className="nav-lvl02__item">
-                  <div className="nav-lvl02__link c-address__text">
-                    ADCB Asset Management Limited, Level 10, Al Sila TowerADGM SquareAl Maryah Island, P. O. Box: 939, Abu Dhabi, United Arab Emirates.
-                  </div>
-                </li>
-                <li className="nav-lvl02__item">
-                  <a className="nav-lvl02__link c-contact-link__text" href="tel:600502322">
-                    <span style={{ marginRight: '4px' }}>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.125 9.02734C13.7539 9.30078 14.1094 9.98438 13.918 10.668L13.3438 13.1562C13.2344 13.8125 12.6602 14.25 11.9766 14.25C5.35938 14.25 0 8.89062 0 2.27344C0 1.58984 0.4375 1.01562 1.09375 0.878906L3.58203 0.304688C4.26562 0.140625 4.94922 0.496094 5.22266 1.125L6.39844 3.85938C6.64453 4.43359 6.45312 5.11719 5.98828 5.52734L5.05859 6.26562C5.76953 7.46875 6.78125 8.48047 8.01172 9.19141L8.75 8.28906C9.16016 7.79688 9.84375 7.60547 10.4453 7.87891L13.125 9.02734ZM12.6602 10.3672C12.6875 10.3125 12.6602 10.2578 12.6055 10.2031L9.92578 9.05469C9.87109 9.02734 9.81641 9.05469 9.78906 9.08203L8.69531 10.4219C8.50391 10.668 8.14844 10.7227 7.875 10.5859C6.04297 9.68359 4.53906 8.17969 3.63672 6.34766C3.5 6.07422 3.58203 5.74609 3.80078 5.55469L5.14062 4.46094C5.19531 4.43359 5.19531 4.37891 5.16797 4.32422L4.01953 1.64453C3.99219 1.61719 3.96484 1.5625 3.91016 1.5625L3.88281 1.58984L1.39453 2.16406C1.33984 2.16406 1.28516 2.21875 1.28516 2.27344C1.28516 8.15234 6.09766 12.9375 11.9766 12.9375C12.0312 12.9375 12.0859 12.8828 12.0859 12.8555L12.6602 10.3672Z" fill="white" />
-                      </svg>
-                    </span>
-                    600 50 2322
-                  </a>
-                </li>
-                <li className="nav-lvl02__item">
-                  <a className="nav-lvl02__link c-contact-link__text" href="/cdn-cgi/l/email-protection#a6c7d5d5c3d2cbc7c8c7c1c3cbc3c8d2e6c7c2c5c488c5c9cb">
-                    <span style={{ marginRight: '4px' }}>
-                      <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6875 0C13.3984 0 14 0.601562 14 1.3125V9.1875C14 9.92578 13.3984 10.5 12.6875 10.5H1.3125C0.574219 10.5 0 9.92578 0 9.1875V1.3125C0 0.601562 0.574219 0 1.3125 0H12.6875ZM12.6875 1.3125H1.3125V2.43359C1.91406 2.95312 2.89844 3.71875 4.97656 5.35938C5.44141 5.71484 6.34375 6.58984 7 6.5625C7.62891 6.58984 8.53125 5.71484 8.99609 5.35938C11.0742 3.71875 12.0586 2.95312 12.6875 2.43359V1.3125ZM1.3125 9.1875H12.6875V4.12891C12.0586 4.62109 11.1562 5.33203 9.81641 6.39844C9.1875 6.86328 8.14844 7.90234 7 7.875C5.82422 7.90234 4.75781 6.86328 4.15625 6.39844C2.81641 5.33203 1.91406 4.62109 1.3125 4.12891V9.1875Z" fill="white" />
-                      </svg>
-                    </span>
-                    <span className="__cf_email__" data-cfemail="bcddcfcfd9c8d1ddd2dddbd9d1d9d2c8fcddd8dfde92dfd3d1">
-                      [email&#160;protected]
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            {footerData.navigation.map((section, sectionIndex) => (
+              <li key={sectionIndex} className={`nav-lvl01__item ${sectionIndex < footerData.navigation.length - 1 ? 'o-comp-collapse' : ''}`}>
+                <div className="nav-lvl01__link o-comp-collapse__btn">{section.title}</div>
+                <ul className="nav-lvl02 o-comp-collapse__content">
+                  {section.items.map((item, itemIndex) => {
+                    if (item.type === 'address') {
+                      return (
+                        <li key={itemIndex} className="nav-lvl02__item">
+                          <div className="nav-lvl02__link c-address__text">{item.content}</div>
+                        </li>
+                      );
+                    }
+                    if (item.type === 'phone') {
+                      return (
+                        <li key={itemIndex} className="nav-lvl02__item">
+                          <a className="nav-lvl02__link c-contact-link__text" href={item.href}>
+                            <span style={{ marginRight: '4px' }}>
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.125 9.02734C13.7539 9.30078 14.1094 9.98438 13.918 10.668L13.3438 13.1562C13.2344 13.8125 12.6602 14.25 11.9766 14.25C5.35938 14.25 0 8.89062 0 2.27344C0 1.58984 0.4375 1.01562 1.09375 0.878906L3.58203 0.304688C4.26562 0.140625 4.94922 0.496094 5.22266 1.125L6.39844 3.85938C6.64453 4.43359 6.45312 5.11719 5.98828 5.52734L5.05859 6.26562C5.76953 7.46875 6.78125 8.48047 8.01172 9.19141L8.75 8.28906C9.16016 7.79688 9.84375 7.60547 10.4453 7.87891L13.125 9.02734ZM12.6602 10.3672C12.6875 10.3125 12.6602 10.2578 12.6055 10.2031L9.92578 9.05469C9.87109 9.02734 9.81641 9.05469 9.78906 9.08203L8.69531 10.4219C8.50391 10.668 8.14844 10.7227 7.875 10.5859C6.04297 9.68359 4.53906 8.17969 3.63672 6.34766C3.5 6.07422 3.58203 5.74609 3.80078 5.55469L5.14062 4.46094C5.19531 4.43359 5.19531 4.37891 5.16797 4.32422L4.01953 1.64453C3.99219 1.61719 3.96484 1.5625 3.91016 1.5625L3.88281 1.58984L1.39453 2.16406C1.33984 2.16406 1.28516 2.21875 1.28516 2.27344C1.28516 8.15234 6.09766 12.9375 11.9766 12.9375C12.0312 12.9375 12.0859 12.8828 12.0859 12.8555L12.6602 10.3672Z" fill="white" />
+                              </svg>
+                            </span>
+                            {item.label}
+                          </a>
+                        </li>
+                      );
+                    }
+                    if (item.type === 'email') {
+                      return (
+                        <li key={itemIndex} className="nav-lvl02__item">
+                          <a className="nav-lvl02__link c-contact-link__text" href={item.href}>
+                            <span style={{ marginRight: '4px' }}>
+                              <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6875 0C13.3984 0 14 0.601562 14 1.3125V9.1875C14 9.92578 13.3984 10.5 12.6875 10.5H1.3125C0.574219 10.5 0 9.92578 0 9.1875V1.3125C0 0.601562 0.574219 0 1.3125 0H12.6875ZM12.6875 1.3125H1.3125V2.43359C1.91406 2.95312 2.89844 3.71875 4.97656 5.35938C5.44141 5.71484 6.34375 6.58984 7 6.5625C7.62891 6.58984 8.53125 5.71484 8.99609 5.35938C11.0742 3.71875 12.0586 2.95312 12.6875 2.43359V1.3125ZM1.3125 9.1875H12.6875V4.12891C12.0586 4.62109 11.1562 5.33203 9.81641 6.39844C9.1875 6.86328 8.14844 7.90234 7 7.875C5.82422 7.90234 4.75781 6.86328 4.15625 6.39844C2.81641 5.33203 1.91406 4.62109 1.3125 4.12891V9.1875Z" fill="white" />
+                              </svg>
+                            </span>
+                            <span className="__cf_email__" data-cfemail="bcddcfcfd9c8d1ddd2dddbd9d1d9d2c8fcddd8dfde92dfd3d1">
+                              {item.label}
+                            </span>
+                          </a>
+                        </li>
+                      );
+                    }
+                    return (
+                      <li key={itemIndex} className="nav-lvl02__item">
+                        {item.href ? (
+                          <Link
+                            className="nav-lvl02__link"
+                            href={item.href}
+                            target={item.target || '_self'}
+                            aria-label={item.ariaLabel}
+                            style={item.style}
+                          >
+                            {item.label}
+                          </Link>
+                        ) : (
+                          <div className="nav-lvl02__link">{item.label}</div>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
       <div className="site-footer__links container">
         <ul className="site-footer__menu-list">
-          <li>
-            <Link href="/en/about/terms.aspx" target="_blank">Terms and Conditions</Link>
-          </li>
-          <li>
-            <a href="https://adcb.com/en/private/key-facts-statement/" target="_self">Key Facts Statement</a>
-          </li>
-          <li>
-            <a href="https://adcb.com/en/security-tips/avoid-phishing-scams" target="_self">Security tips</a>
-          </li>
-          <li>
-            <Link href="/en/about/disclaimer.aspx" target="_self">Disclaimer</Link>
-          </li>
-          <li>
-            <Link href="/en/about/privacy-notice.aspx" target="_self">Privacy Policy</Link>
-          </li>
-          <li>
-            <Link href="/en/about/cookies-notice.aspx" target="_self">Cookies Policy</Link>
-          </li>
-          <li>
-            <a href="https://adcb.com/en/multimedia/pdfs/2021/october/abc-policy.pdf" target="_blank" rel="noopener noreferrer">
-              ABC Policy Statement
-            </a>
-          </li>
-          <li>
-            <a href="https://adcb.com/en/multimedia/PDFS/2023/january/adcb-patriot-act-certification.pdf" target="_blank" rel="noopener noreferrer">
-              USA Patriot Certificate
-            </a>
-          </li>
-          <li>
-            <a href="https://adcb.com/en/suppliers/" target="_self">Suppliers</a>
-          </li>
+          {footerData.footerLinks.map((link, index) => (
+            <li key={index}>
+              {link.href.startsWith('/') ? (
+                <Link href={link.href} target={link.target || '_self'} rel={link.rel}>
+                  {link.label}
+                </Link>
+              ) : (
+                <a href={link.href} target={link.target || '_self'} rel={link.rel}>
+                  {link.label}
+                </a>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
       <div className="site-footer__copyrights container">
         <div className="copyright-text">
-          Copyright © 2025 ADCB Asset Management. All rights reserved.
+          {footerData.copyright.text}
           <br />
-          ADCB Asset Management Limited is a member of ADCB Group, licensed by Financial Services Regulatory Authority in Abu Dhabi Global
-          Markets under financial services permission number 170036.
+          {footerData.copyright.additional}
         </div>
       </div>
     </footer>

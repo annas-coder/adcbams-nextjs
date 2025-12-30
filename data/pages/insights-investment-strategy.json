@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Investment Strategy - ADCB Asset Management Limited",
+    "description": "Our investment strategy team follows a rigorous top-down macroeconomic approach with the aim of identifying key market drivers and determining the optimal asset class exposures.",
+    "keywords": [
+      "Investment Strategy",
+      "Macroeconomic Analysis",
+      "Market Drivers",
+      "Asset Class",
+      "Investment Research"
+    ],
+    "canonical": "/en/insights/investment-strategy",
+    "openGraph": {
+      "title": "Investment Strategy - ADCB Asset Management Limited",
+      "description": "Our investment strategy team follows a rigorous top-down macroeconomic approach with the aim of identifying key market drivers.",
+      "url": "https://www.adcb.com/en/insights/investment-strategy"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Insights",
+      "title": "Exceeding your expectations at every level"
+    },
+    "tabs": [
+      {
+        "href": "/en/insights/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/insights/investment-strategy/",
+        "label": "Investment Strategy",
+        "isActive": true
+      },
+      {
+        "href": "/en/insights/investment-insights/",
+        "label": "Investment Insights"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-investment-strategy.jpg",
+      "alt": "Investment Strategy"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Investment Strategy",
+        "paragraphs": [
+          "Our investment strategy team follows a rigorous top-down macroeconomic approach with the aim of identifying key market drivers and determining the optimal asset class exposures. Not limited to any specific area or asset class, we look instead in a holistic and thematic manner across all geographies and major asset classes, in order to identify high conviction investment ideas.",
+          "We publish our key insights in a pointed and easily readable way in the ADCB Weekly Market View and in the ADCB Quarterly Investment View. We also intervene - from time to time - on ad hoc themes that may be of particular interest to the general public and our clients. Those specific views are published in the ADCB Strategy Note."
+        ]
+      }
+    ]
+  }
+}
+

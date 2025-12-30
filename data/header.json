@@ -1,0 +1,57 @@
+{
+  "className": "site-header t-premium__header -top-menu",
+  "dataAttributes": {
+    "data-lang": "No",
+    "data-theme": "premium",
+    "data-type": "Accessibility"
+  },
+  "quickLinks": {
+    "languageSwitcher": {
+      "enabled": false,
+      "href": "/ar/personal/",
+      "label": "عربي",
+      "lang": "ar-AE"
+    },
+    "login": {
+      "mobile": {
+        "label": "LOGIN",
+        "items": [
+          {
+            "href": "https://adcb.com/en/ib-prelogin.aspx",
+            "label": "Personal Banking",
+            "target": "_blank"
+          },
+          {
+            "href": "https://adcb.com/en/procash-prelogin.aspx",
+            "label": "Business Banking",
+            "target": "_blank"
+          }
+        ]
+      },
+      "desktop": {
+        "label": "LOGIN",
+        "items": [
+          {
+            "href": "https://adcb.com/en/ib-prelogin.aspx",
+            "label": "Personal Banking",
+            "target": "_blank"
+          },
+          {
+            "href": "https://adcb.com/en/procash-prelogin.aspx",
+            "label": "Business Banking",
+            "target": "_blank"
+          }
+        ]
+      }
+    },
+    "search": {
+      "enabled": true,
+      "action": "/en/search.aspx",
+      "method": "get",
+      "placeholder": "I am looking for...",
+      "inputId": "st-search-input-header",
+      "inputName": "stq"
+    }
+  }
+}
+

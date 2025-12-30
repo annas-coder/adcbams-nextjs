@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Charges and Fees - ADCB Asset Management Limited",
+    "description": "Schedule of Fees for ADCB Asset Management Limited. Transparent banking is knowing what you are paying for and why.",
+    "keywords": [
+      "Charges and Fees",
+      "Schedule of Fees",
+      "ADCB Asset Management",
+      "Fees",
+      "Transparent Banking"
+    ],
+    "canonical": "/en/about/sof",
+    "openGraph": {
+      "title": "Charges and Fees - ADCB Asset Management Limited",
+      "description": "Schedule of Fees for ADCB Asset Management Limited. Transparent banking is knowing what you are paying for and why.",
+      "url": "https://www.adcb.com/en/about/sof"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "ABOUT",
+      "title": "Charges and fees"
+    },
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "Transparent banking is knowing what you are paying for and why"
+      },
+      {
+        "type": "paragraph",
+        "content": "Find all the relevant charges and fees from the link mentioned below. To download these files, you would need to install Adobe Acrobat Reader on your computer."
+      },
+      {
+        "type": "downloads",
+        "items": [
+          {
+            "title": "Schedule of Fees for ADCB Asset Management Ltd",
+            "subtitle": "(Effective from 1st of January 2024)",
+            "href": "/en/system/assets-mgnt/aaml-sof-en-1jan24.pdf",
+            "label": "Download (PDF)",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          {
+            "title": "Schedule of Fees for ADCB Asset Management Ltd",
+            "subtitle": "(Effective until 31st of December 2023)",
+            "href": "/en/system/assets-mgnt/aaml-sof-english-v2-150322.pdf",
+            "label": "Download (PDF)",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        ]
+      }
+    ]
+  }
+}
+

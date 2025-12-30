@@ -1,6 +1,11 @@
 import NavLevels from './NavLevels';
+import type { NavigationData } from '@/lib/types';
 
-export default function MainNav() {
+interface MainNavProps {
+  navigationData: NavigationData;
+}
+
+export default function MainNav({ navigationData }: MainNavProps) {
   return (
     <nav role="navigation" className="c-main-nav t-private theme-dark">
       <div className="c-main-nav__content container">
@@ -17,25 +22,30 @@ export default function MainNav() {
         <div className="col-md-23 hidden-sm hidden-xs">
           <ul className="nav-lvl -js-md-plus-visible-nav-lvl">
             <li className="nav-lvl__item active-main is-active">
-              <a href="/en/" className="is-hidden">ADCB Asset Management Limited</a>
+              <a href="/en/" className="is-hidden">{navigationData.mainNav.brandLabel}</a>
             </li>
           </ul>
         </div>
 
-        <NavLevels />
+        <NavLevels
+          brandLabel={navigationData.mainNav.brandLabel}
+          overviewLink={navigationData.mainNav.overviewLink}
+          menuItems={navigationData.mainNav.menuItems}
+        />
 
         <div className="nav-footer menu-footer-bar hide" style={{}}>
           <ul className="nav-footer__list">
-            <li>
-              <a href="/en/contact/" target="_self" className="nav-footer-item">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a className="nav-footer-item" href="/en/about/" target="_blank">
-                About Us
-              </a>
-            </li>
+            {navigationData.navFooter.map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.href}
+                  target={item.target || '_self'}
+                  className="nav-footer-item"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
           <div className="nav-footer__languages"></div>
         </div>

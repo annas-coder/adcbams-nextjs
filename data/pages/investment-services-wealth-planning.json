@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Wealth Planning - ADCB Asset Management Limited",
+    "description": "Wealth planning is an important service provision of Private Banking services to high-net-worth individuals or families. It focuses on assessing the ownership of an individual's assets and ensuring their smooth transfer across generations.",
+    "keywords": [
+      "Wealth Planning",
+      "Estate Planning",
+      "Private Banking",
+      "High Net Worth",
+      "Asset Transfer"
+    ],
+    "canonical": "/en/investment-services/wealth-planning",
+    "openGraph": {
+      "title": "Wealth Planning - ADCB Asset Management Limited",
+      "description": "Wealth planning is an important service provision of Private Banking services to high-net-worth individuals or families.",
+      "url": "https://www.adcb.com/en/investment-services/wealth-planning"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Investment Services",
+      "title": "Whatever you need, whenever you need it"
+    },
+    "tabs": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/investment-services/self-directed-investment/",
+        "label": "Self Directed Investments"
+      },
+      {
+        "href": "/en/investment-services/advisory-solutions/",
+        "label": "Advisory Solutions"
+      },
+      {
+        "href": "/en/investment-services/discretionary-portfolio-management/",
+        "label": "Discretionary Portfolio Management"
+      },
+      {
+        "href": "/en/investment-services/wealth-planning/",
+        "label": "Wealth Planning",
+        "isActive": true
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-wealth-planning.jpg",
+      "alt": "Wealth Planning"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Wealth Planning",
+        "paragraphs": [
+          "Wealth planning is an important service provision of Private Banking services to high-net-worth individuals or families. It focuses on assessing the ownership of an individual's assets and ensuring their smooth transfer across generations."
+        ]
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      }
+    ]
+  }
+}
+

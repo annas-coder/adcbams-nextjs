@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "ADCB Asset Management Limited - Tailored Investment Management",
+    "description": "Leading Abu Dhabi based asset manager with over USD2 Billion of assets under management. Offering self-directed investments, advisory solutions, and discretionary portfolio management.",
+    "keywords": [
+      "ADCB Asset Management",
+      "Investment Management",
+      "Asset Management UAE",
+      "Wealth Management",
+      "Portfolio Management",
+      "Investment Solutions",
+      "Financial Services Abu Dhabi",
+      "Discretionary Portfolio Management",
+      "Advisory Solutions",
+      "Self Directed Investments"
+    ],
+    "canonical": "/en",
+    "openGraph": {
+      "title": "ADCB Asset Management Limited - Tailored Investment Management",
+      "description": "Leading Abu Dhabi based asset manager with over USD2 Billion of assets under management.",
+      "url": "https://www.adcb.com",
+      "siteName": "ADCB Asset Management",
+      "images": [
+        {
+          "url": "https://www.adcb.com/en/Images/adcb-asset-management-og.jpg",
+          "width": 1200,
+          "height": 630,
+          "alt": "ADCB Asset Management Limited"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "ADCB Asset Management Limited - Tailored Investment Management",
+      "description": "Leading Abu Dhabi based asset manager with over USD2 Billion of assets under management.",
+      "images": ["https://www.adcb.com/en/Images/adcb-asset-management-twitter.jpg"]
+    },
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    }
+  },
+  "content": {
+    "heroBanner": {
+      "dataSource": "hero-banner.json"
+    },
+    "investmentSolutions": {
+      "dataSource": "investment-solutions.json"
+    },
+    "getStarted": {
+      "dataSource": "get-started-steps.json"
+    }
+  }
+}
+

@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "title": "Discretionary Portfolio Management - ADCB Asset Management Limited",
+    "description": "ADCB Asset Management offers a tailor made, actively managed discretionary portfolio solutions designed to meet your unique investment needs.",
+    "keywords": [
+      "Discretionary Portfolio Management",
+      "Portfolio Management",
+      "Active Management",
+      "Investment Solutions"
+    ],
+    "canonical": "/en/investment-services/discretionary-portfolio-management",
+    "openGraph": {
+      "title": "Discretionary Portfolio Management - ADCB Asset Management Limited",
+      "description": "ADCB Asset Management offers a tailor made, actively managed discretionary portfolio solutions designed to meet your unique investment needs.",
+      "url": "https://www.adcb.com/en/investment-services/discretionary-portfolio-management"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Investment Services",
+      "title": "Whatever you need, whenever you need it"
+    },
+    "tabs": [
+      {
+        "href": "/en/investment-services/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/investment-services/self-directed-investment/",
+        "label": "Self Directed Investments"
+      },
+      {
+        "href": "/en/investment-services/advisory-solutions/",
+        "label": "Advisory Solutions"
+      },
+      {
+        "href": "/en/investment-services/discretionary-portfolio-management/",
+        "label": "Discretionary Portfolio Management",
+        "isActive": true
+      },
+      {
+        "href": "/en/investment-services/wealth-planning/",
+        "label": "Wealth Planning"
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-discretionary-portfolio-anagement.jpg",
+      "alt": "Discretionary Portfolio Management"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Discretionary Portfolio Management",
+        "paragraphs": [
+          "ADCB Asset Management offers a tailor made, actively managed discretionary portfolio solutions designed to meet your unique investment needs."
+        ]
+      },
+      {
+        "type": "twoColumn",
+        "image": {
+          "src": "/en/Images/discretionary-portfolio-management-thumbnail.png",
+          "alt": "Discretionary Portfolio Solutions"
+        },
+        "title": "Discretionary Portfolio Solutions",
+        "items": [
+          "Regional Direct Equity and Fixed Income Mandates",
+          "Global Balanced Multi- Manager Mandates"
+        ]
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      }
+    ]
+  }
+}
+

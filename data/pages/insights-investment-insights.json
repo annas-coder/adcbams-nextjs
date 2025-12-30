@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Investment Insights - ADCB Asset Management Limited",
+    "description": "To aid you in your wealth journey, our experts regularly identify products, themes and securities that are timely and pertinent to your investment needs.",
+    "keywords": [
+      "Investment Insights",
+      "Investment Products",
+      "Investment Themes",
+      "Securities",
+      "Wealth Journey"
+    ],
+    "canonical": "/en/insights/investment-insights",
+    "openGraph": {
+      "title": "Investment Insights - ADCB Asset Management Limited",
+      "description": "To aid you in your wealth journey, our experts regularly identify products, themes and securities that are timely and pertinent to your investment needs.",
+      "url": "https://www.adcb.com/en/insights/investment-insights"
+    }
+  },
+  "content": {
+    "hero": {
+      "category": "Insights",
+      "title": "The power of knowledge"
+    },
+    "tabs": [
+      {
+        "href": "/en/insights/",
+        "label": "Overview"
+      },
+      {
+        "href": "/en/insights/investment-strategy/",
+        "label": "Investment Strategy"
+      },
+      {
+        "href": "/en/insights/investment-insights/",
+        "label": "Investment Insights",
+        "isActive": true
+      }
+    ],
+    "bannerImage": {
+      "src": "/en/Images/aaml-insights.jpg",
+      "alt": "Investment Insights"
+    },
+    "sections": [
+      {
+        "type": "intro",
+        "title": "Investment Insights",
+        "paragraphs": [
+          "To aid you in your wealth journey, our experts regularly identify products, themes and securities that are timely and pertinent to your investment needs. In-depth and insightful, these ideas are selected to guide you in your portfolio decision but should always be considered in a broader diversified portfolio context."
+        ]
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      }
+    ]
+  }
+}
+

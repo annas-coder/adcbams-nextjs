@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import SiteLayout from '@/components/layout/SiteLayout';
 import AccessibilityComponent from '@/components/accessibility/AccessibilityComponent';
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
+import { loadPageData } from '@/lib/data/loadData';
+import { generateMetadataFromPageData } from '@/lib/utils/metadata';
+import { PageContent } from '@/components/page';
 
 // Define all valid slugs for this dynamic route
 const VALID_SLUGS = ['investment-insights', 'investment-strategy'];
@@ -29,48 +30,28 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.adcb.com';
   
-  const metadataMap: Record<string, Metadata> = {
-    'investment-insights': {
-      title: 'Investment Insights - ADCB Asset Management Limited',
-      description: 'To aid you in your wealth journey, our experts regularly identify products, themes and securities that are timely and pertinent to your investment needs.',
+  // Map slug to page data filename
+  const slugToFilename: Record<string, string> = {
+    'investment-insights': 'insights-investment-insights',
+    'investment-strategy': 'insights-investment-strategy',
+  };
+  
+  const filename = slugToFilename[slug] || slug;
+  
+  try {
+    const pageData = await loadPageData(filename);
+    return generateMetadataFromPageData(pageData);
+  } catch (error) {
+    // Fallback metadata if page data not found
+    return {
+      title: 'Insights - ADCB Asset Management Limited',
+      description: 'Investment decision support at every juncture.',
       alternates: {
         canonical: `/en/insights/${slug}`,
       },
-      openGraph: {
-        title: 'Investment Insights - ADCB Asset Management Limited',
-        description: 'To aid you in your wealth journey, our experts regularly identify products, themes and securities that are timely and pertinent to your investment needs.',
-        url: `${siteUrl}/en/insights/${slug}`,
-        siteName: 'ADCB Asset Management',
-        locale: 'en_US',
-        type: 'website',
-      },
-    },
-    'investment-strategy': {
-      title: 'Investment Strategy - ADCB Asset Management Limited',
-      description: 'Our investment strategy and approach to portfolio management.',
-      alternates: {
-        canonical: `/en/insights/${slug}`,
-      },
-      openGraph: {
-        title: 'Investment Strategy - ADCB Asset Management Limited',
-        description: 'Our investment strategy and approach to portfolio management.',
-        url: `${siteUrl}/en/insights/${slug}`,
-        siteName: 'ADCB Asset Management',
-        locale: 'en_US',
-        type: 'website',
-      },
-    },
-  };
-
-  return metadataMap[slug] || {
-    title: 'Insights - ADCB Asset Management Limited',
-    description: 'Investment decision support at every juncture.',
-    alternates: {
-      canonical: `/en/insights/${slug}`,
-    },
-  };
+    };
+  }
 }
 
 /**
@@ -88,18 +69,32 @@ export default async function InsightPage({
     notFound();
   }
 
-  // Render different content based on slug
-  // This will be server-rendered on each request for unknown slugs
-  return (
-    <SiteLayout>
-      <AccessibilityComponent />
-      <Header />
-      <div className="site-content rs_preserve" id="site-content">
-        <h1>Insight: {slug}</h1>
-        {/* Your page content here */}
-      </div>
-      <Footer />
-    </SiteLayout>
-  );
+  // Map slug to page data filename
+  const slugToFilename: Record<string, string> = {
+    'investment-insights': 'insights-investment-insights',
+    'investment-strategy': 'insights-investment-strategy',
+  };
+  
+  const filename = slugToFilename[slug] || slug;
+  
+  try {
+    const pageData = await loadPageData(filename);
+    return (
+      <SiteLayout>
+        <AccessibilityComponent />
+        <PageContent content={pageData.content} />
+      </SiteLayout>
+    );
+  } catch (error) {
+    // Fallback if page data not found
+    return (
+      <SiteLayout>
+        <AccessibilityComponent />
+        <div className="site-content rs_preserve" id="site-content">
+          <h1>Insight: {slug}</h1>
+        </div>
+      </SiteLayout>
+    );
+  }
 }
 
