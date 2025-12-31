@@ -23,7 +23,7 @@ export function generateMetadataFromPageData(pageData: PageData): Metadata {
       siteName: metadata.openGraph.siteName || 'ADCB Asset Management',
       images: metadata.openGraph.images,
       locale: metadata.openGraph.locale || 'en_US',
-      type: (metadata.openGraph.type || 'website') as 'website' | 'article' | 'book' | 'profile',
+      type: (metadata.openGraph.type || 'website') as 'article' | 'website' | 'book' | 'profile' | 'music.song' | 'music.album' | 'music.playlist' | 'music.radio_station' | 'video.movie' | 'video.episode' | 'video.tv_show' | 'video.other' | undefined,
     } : undefined,
     twitter: metadata.twitter ? {
       card: (metadata.twitter.card || 'summary_large_image') as 'summary_large_image' | 'summary' | 'player' | 'app',

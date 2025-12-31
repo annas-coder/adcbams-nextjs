@@ -9,37 +9,11 @@ import GetStarted from '@/components/content/GetStarted';
 import TermsModal from '@/components/common/TermsModal';
 import HomePageClient from './components/HomePageClient';
 import { loadGetStartedSteps, loadInvestmentSolutions, loadHeroBannerData, loadPageData } from '@/lib/data/loadData';
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.adcb.com';
+import { generateMetadataFromPageData } from '@/lib/utils/metadata';
 
 export async function generateMetadata(): Promise<Metadata> {
   const pageData = await loadPageData('home');
-  const metadata = pageData.metadata;
-
-  return {
-    title: metadata.title,
-    description: metadata.description,
-    keywords: metadata.keywords,
-    alternates: {
-      canonical: metadata.canonical,
-    },
-    openGraph: metadata.openGraph ? {
-      title: metadata.openGraph.title || metadata.title,
-      description: metadata.openGraph.description || metadata.description,
-      url: metadata.openGraph.url || siteUrl,
-      siteName: metadata.openGraph.siteName || 'ADCB Asset Management',
-      images: metadata.openGraph.images,
-      locale: metadata.openGraph.locale || 'en_US',
-      type: metadata.openGraph.type || 'website',
-    } : undefined,
-    twitter: metadata.twitter ? {
-      card: metadata.twitter.card || 'summary_large_image',
-      title: metadata.twitter.title || metadata.title,
-      description: metadata.twitter.description || metadata.description,
-      images: metadata.twitter.images,
-    } : undefined,
-    robots: metadata.robots,
-  };
+  return generateMetadataFromPageData(pageData);
 }
 
 export default async function Home() {

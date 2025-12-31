@@ -6,7 +6,7 @@ import { useState, useEffect, useRef, createContext, useContext } from 'react';
 export const SearchContext = createContext<{
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
-  searchBoxRef: React.RefObject<HTMLDivElement>;
+  searchBoxRef: React.RefObject<HTMLDivElement | null>;
 } | null>(null);
 
 // Search icon component (goes inside <ul>)

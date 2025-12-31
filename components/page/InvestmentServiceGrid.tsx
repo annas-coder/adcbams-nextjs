@@ -49,7 +49,7 @@ export default function InvestmentServiceGrid({ items }: InvestmentServiceGridPr
 
         {/* Strategy row */}
         <div className="c-investment-service__grid-item" style={{ background: 'rgba(62, 94, 169, .5)' }}></div>
-        <div className="c-investment-service__grid-item" colSpan={items.length}>
+        <div className="c-investment-service__grid-item" style={{ gridColumn: `span ${items.length}` }}>
           Strategy and Research / Decision Support
         </div>
         <div className="c-investment-service__grid-item" style={{ background: 'rgba(255,255,255, .5)', color: '#00205b', fontWeight: 'bold' }}></div>
