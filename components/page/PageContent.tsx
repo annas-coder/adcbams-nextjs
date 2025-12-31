@@ -4,6 +4,7 @@ import HeroSection from './HeroSection';
 import ContentSection from './ContentSection';
 import TabNavigation from './TabNavigation';
 import InvestmentServiceGrid from './InvestmentServiceGrid';
+import Breadcrumb from './Breadcrumb';
 
 interface PageContentProps {
   content: PageContentType;
@@ -12,8 +13,11 @@ interface PageContentProps {
 export default function PageContent({ content }: PageContentProps) {
   return (
     <div className="site-content rs_preserve" id="site-content">
-      {/* Hero Section */}
-      {content.hero && (
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb />
+      
+      {/* Hero Section - Only show for pages without tabs */}
+      {content.hero && !content.tabs && (
         <HeroSection
           category={content.hero.category}
           title={content.hero.title}
@@ -21,24 +25,24 @@ export default function PageContent({ content }: PageContentProps) {
         />
       )}
 
-      {/* Main Content Container */}
-      <div className={`c-investment-solutions-container ${content.tabs && content.hero?.category === 'Insights' ? 'c-investment-strategy-container' : ''}`}>
-        {/* Title Section (for pages with tabs) */}
-        {content.tabs && content.hero && (
-          <div className="container">
-            <div className="row">
-              <div className="col-md-48">
-                <h1 className="c-block--title">
-                  <sup className="hero-section__category">{content.hero.category}</sup>
-                  {content.hero.title}
-                </h1>
+      {/* Main Content Container - Only use c-investment-solutions-container for pages with tabs */}
+      {content.tabs ? (
+        <div className={`c-investment-solutions-container ${content.hero?.category === 'Insights' ? 'c-investment-strategy-container' : ''}`}>
+          {/* Title Section (for pages with tabs) */}
+          {content.hero && (
+            <div className="container">
+              <div className="row">
+                <div className="col-md-48">
+                  <h1 className="c-block--title">
+                    <sup className="hero-section__category">{content.hero.category}</sup>
+                    {content.hero.title}
+                  </h1>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Tab Navigation */}
-        {content.tabs && (
+          {/* Tab Navigation */}
           <div className="o-comp o-on-page-tabs">
             <div className="o-comp__content">
               <div className="o-tabs-content__wrapper">
@@ -168,19 +172,26 @@ export default function PageContent({ content }: PageContentProps) {
               </div>
             </div>
           </div>
-        )}
-
-        {/* Content without tabs (simple pages) */}
-        {!content.tabs && (
-          <div className="o-comp c-cms-content no-top-pad">
-            <div className="o-comp__content container">
-              {content.sections?.map((section, index) => (
+        </div>
+      ) : (
+        /* Content without tabs (simple pages like About, Contact) */
+        <div className="o-comp c-cms-content no-top-pad">
+          <div className="o-comp__content container">
+            {content.sections
+              ?.filter(section => section.type !== 'getInTouch')
+              .map((section, index) => (
                 <ContentSection key={index} section={section} />
               ))}
-            </div>
           </div>
-        )}
-      </div>
+          
+          {/* Render getInTouch sections outside container */}
+          {content.sections
+            ?.filter(section => section.type === 'getInTouch')
+            .map((section, index) => (
+              <ContentSection key={index} section={section} />
+            ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -6,5 +6,6 @@ export { default as InvestmentServiceGrid } from './InvestmentServiceGrid';
 export { default as TwoColumnBlock } from './TwoColumnBlock';
 export { default as ContactCards } from './ContactCards';
 export { default as PdfDownloadBoxes } from './PdfDownloadBoxes';
+export { default as Breadcrumb } from './Breadcrumb';
 
 
