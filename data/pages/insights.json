@@ -48,6 +48,50 @@
           "ADCB Asset Management understands the power of knowledge. Our strategists and advisors are committed to delivering the highest quality insights into key global investment trends and themes across asset classes, sectors, countries and regions, as well as topical, relevant and tradable investment ideas.",
           "Any investment, regardless of the level of diligence and research, has an element of investment risk. Always consult with your Investment Advisor or Relationship Manager to ensure suitability before entering into an investment transaction."
         ]
+      },
+      {
+        "type": "insightsTable"
+      },
+      {
+        "type": "contactAdvisor",
+        "title": "Is this the optimal solution for me?",
+        "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
+        "link": {
+          "href": "/en/contact/",
+          "label": "Contact us"
+        }
+      },
+      {
+        "type": "getInTouch",
+        "title": "Get in Touch",
+        "items": [
+          {
+            "icon": "/en/system/includes/images/phone-icon-100723.svg",
+            "title": "Contact Centre",
+            "content": "Call our 24-hour contact centre on",
+            "link": {
+              "href": "tel:600502322",
+              "label": "600 50 2322",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/message-icon-100723.svg",
+            "title": "Apply through SMS",
+            "content": "SMS",
+            "highlight": "PRIVATE",
+            "link": {
+              "href": "sms:2626&body=PRIVATE",
+              "label": "2626",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/marker-icon-100723.svg",
+            "title": "Visit Us",
+            "content": "We will be happy to welcome you at our exclusive Private Centers"
+          }
+        ]
       }
     ]
   }

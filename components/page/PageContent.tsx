@@ -1,10 +1,11 @@
-import { PageContent as PageContentType, IntroSection, ComparisonGridSection, FeaturedProductsSection, ContactAdvisorSection } from '@/lib/types/page';
+import { PageContent as PageContentType, IntroSection, ComparisonGridSection, FeaturedProductsSection, ContactAdvisorSection, InsightsTableSection } from '@/lib/types/page';
 import Link from 'next/link';
 import HeroSection from './HeroSection';
 import ContentSection from './ContentSection';
 import TabNavigation from './TabNavigation';
 import InvestmentServiceGrid from './InvestmentServiceGrid';
 import Breadcrumb from './Breadcrumb';
+import InsightsTable from './InsightsTable';
 
 interface PageContentProps {
   content: PageContentType;
@@ -72,14 +73,19 @@ export default function PageContent({ content }: PageContentProps) {
                     {/* Content Sections */}
                     {content.sections && (
                       <div className="c-investment-services__container">
-                        {content.sections.map((section, index) => {
+                        {content.sections
+                          .filter(section => {
+                            const sectionType = (section as any).type;
+                            return sectionType !== 'contactAdvisor' && sectionType !== 'getInTouch' && sectionType !== 'insightsTable';
+                          })
+                          .map((section, index) => {
                           // Handle special section types
                           if (section.type === 'intro') {
                             const introSection = section as IntroSection;
                             // Check if this is for insights pages (different styling)
                             const isInsightsPage = content.hero?.category === 'Insights';
                             return (
-                              <div key={index} className={isInsightsPage ? 'c-investment-services__container c-investment-strategy__container' : 'c-self-directed-investment__container c-blue-container'}>
+                              <div key={index} className={isInsightsPage ? ' c-investment-strategy__container' : 'c-self-directed-investment__container c-blue-container'}>
                                 <div className="container">
                                   <div className={isInsightsPage ? 'row' : ''}>
                                     <div className={isInsightsPage ? 'col-md-48 c-investment-services__text-wrapper' : 'c-self-directed-investment__text-wrapper'}>
@@ -137,31 +143,6 @@ export default function PageContent({ content }: PageContentProps) {
                             );
                           }
 
-                          if (section.type === 'contactAdvisor') {
-                            const advisorSection = section as ContactAdvisorSection;
-                            const isInsightsPage = content.hero?.category === 'Insights';
-                            return (
-                              <div key={index} className={`c-contact-advisor__container ${isInsightsPage ? '' : 'c-blue-container'}`}>
-                                <div className="container">
-                                  <div className="row">
-                                    <div className="col-md-32 c-contact-advisor__text-block">
-                                      <h4 className="contact-advisor__title">{advisorSection.title}</h4>
-                                      <p className="contact-advisor__text" style={{ opacity: 0.7 }}>
-                                        {advisorSection.description}
-                                      </p>
-                                      <Link href={advisorSection.link.href} className="o-link-more icon-arrow-down">
-                                        {advisorSection.link.label}
-                                      </Link>
-                                    </div>
-                                    <div className="col-md-16 c-contact-advisor__img-block">
-                                      <img src="/en/system/includes/images/contact-advisory-logo-100723.svg" alt="Contact Advisory" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            );
-                          }
-
                           // Handle standard content sections
                           return <ContentSection key={index} section={section} />;
                         })}
@@ -172,6 +153,43 @@ export default function PageContent({ content }: PageContentProps) {
               </div>
             </div>
           </div>
+          
+          {/* Render insightsTable, contactAdvisor and getInTouch sections outside container for pages with tabs */}
+          {content.sections
+            ?.filter(section => section.type === 'insightsTable' || section.type === 'contactAdvisor' || section.type === 'getInTouch')
+            .map((section, index) => {
+              if (section.type === 'insightsTable') {
+                return (
+                  <div key={index}>
+                    <InsightsTable />
+                  </div>
+                );
+              }
+              if (section.type === 'contactAdvisor') {
+                const advisorSection = section as ContactAdvisorSection;
+                return (
+                  <div key={index} className="c-contact-advisor__container c-blue-container">
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-md-32 c-contact-advisor__text-block">
+                          <h4 className="contact-advisor__title">{advisorSection.title}</h4>
+                          <p className="contact-advisor__text" style={{ opacity: 0.7 }}>
+                            {advisorSection.description}
+                          </p>
+                          <Link href={advisorSection.link.href} className="o-link-more icon-arrow-down">
+                            {advisorSection.link.label}
+                          </Link>
+                        </div>
+                        <div className="col-md-16 c-contact-advisor__img-block">
+                          <img src="/en/system/includes/images/contact-advisory-logo-100723.svg" alt="Contact Advisory" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              return <ContentSection key={index} section={section} />;
+            })}
         </div>
       ) : (
         /* Content without tabs (simple pages like About, Contact) */

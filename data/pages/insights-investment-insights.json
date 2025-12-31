@@ -49,6 +49,9 @@
         ]
       },
       {
+        "type": "insightsTable"
+      },
+      {
         "type": "contactAdvisor",
         "title": "Is this the optimal solution for me?",
         "description": "Are you an investment savvy, hands-on investor looking for a \"one stop shop\" to manage your own portfolio? If yes, then this is the solution for you.",
@@ -56,6 +59,38 @@
           "href": "/en/contact/",
           "label": "Contact us"
         }
+      },
+      {
+        "type": "getInTouch",
+        "title": "Get in Touch",
+        "items": [
+          {
+            "icon": "/en/system/includes/images/phone-icon-100723.svg",
+            "title": "Contact Centre",
+            "content": "Call our 24-hour contact centre on",
+            "link": {
+              "href": "tel:600502322",
+              "label": "600 50 2322",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/message-icon-100723.svg",
+            "title": "Apply through SMS",
+            "content": "SMS",
+            "highlight": "PRIVATE",
+            "link": {
+              "href": "sms:2626&body=PRIVATE",
+              "label": "2626",
+              "className": "c-text-blue"
+            }
+          },
+          {
+            "icon": "/en/system/includes/images/marker-icon-100723.svg",
+            "title": "Visit Us",
+            "content": "We will be happy to welcome you at our exclusive Private Centers"
+          }
+        ]
       }
     ]
   }

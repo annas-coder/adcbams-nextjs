@@ -131,6 +131,10 @@ export interface ContactAdvisorSection {
   };
 }
 
+export interface InsightsTableSection {
+  type: 'insightsTable';
+}
+
 export interface PdfDownloadItem {
   title: string;
   date?: string;
@@ -189,7 +193,8 @@ export type ContentSection =
   | IntroSection
   | ComparisonGridSection
   | FeaturedProductsSection
-  | ContactAdvisorSection;
+  | ContactAdvisorSection
+  | InsightsTableSection;
 
 // Page Content Structure
 export interface PageContent {
