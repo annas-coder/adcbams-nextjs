@@ -11,3 +11,4 @@ export interface SiteConfig {
   favicon: string;
 }
 
+
