@@ -45,10 +45,6 @@ function generateBreadcrumbs(pathname: string) {
 export default function Breadcrumb() {
   const pathname = usePathname();
   
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/b79ba410-15ee-46dc-9ad6-e2d521cfadc0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Breadcrumb.tsx:45',message:'Breadcrumb component rendered',data:{pathname},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-  // #endregion
-  
   // Don't show breadcrumbs on home page
   if (pathname === '/en' || pathname === '/en/') {
     return null;
@@ -56,31 +52,10 @@ export default function Breadcrumb() {
   
   const breadcrumbs = generateBreadcrumbs(pathname);
   
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/b79ba410-15ee-46dc-9ad6-e2d521cfadc0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Breadcrumb.tsx:53',message:'Breadcrumbs generated',data:{breadcrumbCount:breadcrumbs.length,breadcrumbs:breadcrumbs.map(c=>c.label)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-  // #endregion
-  
   // Don't show if only Home (shouldn't happen, but safety check)
   if (breadcrumbs.length <= 1) {
     return null;
   }
-  
-  // #region agent log
-  if (typeof window !== 'undefined') {
-    setTimeout(() => {
-      const links = document.querySelectorAll('.c-breadcrumbs__link');
-      links.forEach((link, idx) => {
-        const computed = window.getComputedStyle(link, ':before');
-        const content = computed.getPropertyValue('content');
-        const display = computed.getPropertyValue('display');
-        const position = computed.getPropertyValue('position');
-        const transform = computed.getPropertyValue('transform');
-        const fontSize = computed.getPropertyValue('font-size');
-        fetch('http://127.0.0.1:7244/ingest/b79ba410-15ee-46dc-9ad6-e2d521cfadc0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Breadcrumb.tsx:67',message:'Computed styles for :before pseudo-element - post-fix',data:{linkIndex:idx,linkText:link.textContent,content,display,position,transform,fontSize,hasContent:content && content !== 'none' && content !== 'normal'},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'B'})}).catch(()=>{});
-      });
-    }, 100);
-  }
-  // #endregion
   
   return (
     <nav 
