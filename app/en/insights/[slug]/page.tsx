@@ -4,7 +4,7 @@ import SiteLayout from '@/components/layout/SiteLayout';
 import AccessibilityComponent from '@/components/accessibility/AccessibilityComponent';
 import { loadPageData } from '@/lib/data/loadData';
 import { generateMetadataFromPageData } from '@/lib/utils/metadata';
-import { PageContent } from '@/components/page';
+import { TabbedPageContent } from '@/components/page';
 
 // Define all valid slugs for this dynamic route
 const VALID_SLUGS = ['investment-insights', 'investment-strategy'];
@@ -79,10 +79,11 @@ export default async function InsightPage({
   
   try {
     const pageData = await loadPageData(filename);
+    
     return (
       <SiteLayout>
         <AccessibilityComponent />
-        <PageContent content={pageData.content} />
+        <TabbedPageContent content={pageData.content} />
       </SiteLayout>
     );
   } catch (error) {

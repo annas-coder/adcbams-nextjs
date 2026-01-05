@@ -3,7 +3,7 @@ import SiteLayout from '@/components/layout/SiteLayout';
 import AccessibilityComponent from '@/components/accessibility/AccessibilityComponent';
 import { loadPageData } from '@/lib/data/loadData';
 import { generateMetadataFromPageData } from '@/lib/utils/metadata';
-import { PageContent } from '@/components/page';
+import { TabbedPageContent } from '@/components/page';
 
 export async function generateMetadata(): Promise<Metadata> {
   const pageData = await loadPageData('investment-services-discretionary');
@@ -16,7 +16,7 @@ export default async function DiscretionaryPortfolioManagementPage() {
   return (
     <SiteLayout>
       <AccessibilityComponent />
-      <PageContent content={pageData.content} />
+      <TabbedPageContent content={pageData.content} />
     </SiteLayout>
   );
 }
